@@ -58,11 +58,11 @@ def initialise_tracker(first_measurement, R_radar):
     P_init[:2, :2] = position_cov
     P_init[2:, 2:] = np.eye(2) * 25.0
 
-    return EKFTracker(x_inicial=x_init, P_inicial=P_init, sigma_a=0.05)
+    return EKFTracker(x_initial=x_init, P_initial=P_init, sigma_a=0.05)
 
 
 def run_simulation(scenario_path=SCENARIO_A_PATH):
-    print("A iniciar o rastreamento T3: EKF com radar apenas (Cenario A)...")
+    print("Starting T3 tracking: radar-only EKF (Scenario A)...")
 
     coord_manager = CoordinateFrameManager()
 

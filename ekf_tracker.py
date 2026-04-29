@@ -7,27 +7,26 @@ def wrap_angle(angle):
 
 
 class EKFTracker:
-    def __init__(self, x_inicial, P_inicial, sigma_a):
+    def __init__(self, x_initial, P_initial, sigma_a):
         """
-        Inicializa a memória do Filtro de Kalman para UM alvo.
+        Initialize the Kalman filter state for one target.
         """
-        # Estado atual [Norte, Este, Vel_Norte, Vel_Este]
-        self.x = x_inicial
+        # Current state [North, East, Velocity North, Velocity East]
+        self.x = x_initial
         
-        # Matriz de covariância (Incerteza atual)
-        self.P = P_inicial
+        # Current covariance matrix
+        self.P = P_initial
         
-        # Desvio padrão da aceleração (O ruído de processo Q)
-        # (O valor de sigma_a costuma estar especificado no enunciado, ex: 0.05)
+        # Acceleration standard deviation used to build the process noise Q.
         self.sigma_a = sigma_a
         self.last_nis = None
 
     def predict(self, dt):
         """
-        Fase 1 do EKF: Prevê onde o barco vai estar com base na velocidade.
+        EKF phase 1: predict the target state using the current velocity.
         """
-        # 1. Matriz de Transição de Estado (F) - Modelo CV
-        # Assume que a posição muda com dt*velocidade, e a velocidade mantém-se constante.
+        # 1. State transition matrix (F), using a constant-velocity model.
+        # Position changes by dt * velocity, while velocity remains constant.
         F = np.array([
             [1.0, 0.0,  dt, 0.0],
             [0.0, 1.0, 0.0,  dt],
@@ -35,8 +34,8 @@ class EKFTracker:
             [0.0, 0.0, 0.0, 1.0]
         ])
 
-        # 2. Matriz de Ruído de Processo (Q)
-        # Modela as pequenas variações de aceleração que não conseguimos prever
+        # 2. Process noise matrix (Q).
+        # Models small acceleration changes that the motion model cannot predict.
         q11 = (dt**4) / 4.0
         q13 = (dt**3) / 2.0
         q33 = dt**2
@@ -48,15 +47,15 @@ class EKFTracker:
             [0.0, q13, 0.0, q33]
         ])
 
-        # 3. Equações Matemáticas de Predição do Kalman
-        self.x = F @ self.x                    # Estado previsto
-        self.P = F @ self.P @ F.T + Q          # Incerteza prevista
+        # 3. Kalman prediction equations.
+        self.x = F @ self.x                    # Predicted state
+        self.P = F @ self.P @ F.T + Q          # Predicted covariance
 
         return self.x
 
     def update(self, z, h, H, R):
         """
-        Fase 2 do EKF: corrige a previsão usando uma medição range/bearing.
+        EKF phase 2: correct the prediction using a range/bearing measurement.
 
         Returns
         -------
