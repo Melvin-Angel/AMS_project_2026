@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Arc
 
-from tracking_common import TRACKING_OUTPUT_DIR, polar_to_cartesian
+from src.tracking_common import TRACKING_OUTPUT_DIR, polar_to_cartesian
 
 
 SENSOR_COLORS = {

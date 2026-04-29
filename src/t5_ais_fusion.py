@@ -1,6 +1,12 @@
+import sys
+from pathlib import Path
+
 import numpy as np
 
-from tracking_common import (
+if __package__ is None or __package__ == "":
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from src.tracking_common import (
     SCENARIO_C_PATH,
     T5_SENSOR_ORDER,
     history_from_records,
@@ -13,7 +19,7 @@ from tracking_common import (
     rmse_for_window,
     truth_position_at,
 )
-from tracking_plots import plot_tracking_result
+from src.tracking_plots import plot_tracking_result
 
 
 def build_t5_event_queue(measurements, active_sensors, target_id=0):

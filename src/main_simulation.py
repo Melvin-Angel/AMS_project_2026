@@ -1,9 +1,14 @@
 import argparse
+import sys
+from pathlib import Path
 
-from t2_coordinate_manager import run_t2_coordinate_manager_tests
-from t3_radar_tracker import run_t3_radar_tracker
-from t4_camera_fusion import run_t4_comparison
-from t5_ais_fusion import run_t5_comparison
+if __package__ is None or __package__ == "":
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from src.t2_coordinate_manager import run_t2_coordinate_manager_tests
+from src.t3_radar_tracker import run_t3_radar_tracker
+from src.t4_camera_fusion import run_t4_comparison
+from src.t5_ais_fusion import run_t5_comparison
 
 
 def main():

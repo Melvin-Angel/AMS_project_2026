@@ -1,6 +1,12 @@
+import sys
+from pathlib import Path
+
 import numpy as np
 
-from tracking_common import (
+if __package__ is None or __package__ == "":
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from src.tracking_common import (
     SCENARIO_B_PATH,
     SENSOR_ORDER,
     block_diag,
@@ -14,8 +20,8 @@ from tracking_common import (
     real_sensor_measurements,
     truth_position_at,
 )
-from tracking_plots import plot_tracking_result
-from coordinate_manager import CoordinateFrameManager
+from src.tracking_plots import plot_tracking_result
+from src.coordinate_manager import CoordinateFrameManager
 
 
 def build_joint_measurement(tracker, coord_manager, measurements, R_by_sensor):

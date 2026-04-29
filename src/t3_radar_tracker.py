@@ -1,7 +1,13 @@
+import sys
+from pathlib import Path
+
 import numpy as np
 
-from coordinate_manager import CoordinateFrameManager
-from tracking_common import (
+if __package__ is None or __package__ == "":
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from src.coordinate_manager import CoordinateFrameManager
+from src.tracking_common import (
     SCENARIO_A_PATH,
     history_from_records,
     initialise_tracker,
@@ -10,7 +16,7 @@ from tracking_common import (
     real_radar_measurements,
     truth_position_at,
 )
-from tracking_plots import plot_tracking_result
+from src.tracking_plots import plot_tracking_result
 
 
 def run_t3_radar_tracker(scenario_path=SCENARIO_A_PATH, make_plot=True):

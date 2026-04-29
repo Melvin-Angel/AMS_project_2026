@@ -3,11 +3,11 @@ from pathlib import Path
 
 import numpy as np
 
-from coordinate_manager import CoordinateFrameManager
-from ekf_tracker import EKFTracker
+from src.coordinate_manager import CoordinateFrameManager
+from src.ekf_tracker import EKFTracker
 
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parents[1]
 SCENARIO_A_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_A.json"
 SCENARIO_B_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_B.json"
 SCENARIO_C_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_C.json"

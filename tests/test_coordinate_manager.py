@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from coordinate_manager import CoordinateFrameManager
+from src.coordinate_manager import CoordinateFrameManager
 
 
 class TestCoordinateFrameManager(unittest.TestCase):
