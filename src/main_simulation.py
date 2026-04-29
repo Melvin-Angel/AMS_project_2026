@@ -18,8 +18,8 @@ def main():
         "task",
         choices=("t2", "t3", "t4", "t5", "t6", "all"),
         nargs="?",
-        default="t5",
-        help="Task runner to execute. Defaults to t5.",
+        default="all",
+        help="Task runner to execute. Defaults to all.",
     )
     parser.add_argument(
         "--no-plot",
