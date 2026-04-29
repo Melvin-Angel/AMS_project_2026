@@ -11,6 +11,7 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 SCENARIO_A_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_A.json"
 SCENARIO_B_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_B.json"
 SCENARIO_C_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_C.json"
+SCENARIO_D_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_D.json"
 TRACKING_OUTPUT_DIR = BASE_DIR / "tracking_output"
 
 SENSOR_ORDER = ("radar", "camera")
@@ -18,6 +19,10 @@ T5_SENSOR_ORDER = ("gnss", "radar", "camera", "ais")
 CHI2_95_THRESHOLDS = {
     2: 5.991,
     4: 9.488,
+}
+CHI2_99_THRESHOLDS = {
+    2: 9.210,
+    4: 13.277,
 }
 
 

@@ -169,3 +169,87 @@ def plot_tracking_result(
     fig.savefig(output_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
     return output_path
+
+
+def plot_t6_tracks(
+    scenario_data,
+    tracks,
+    target_track_ids,
+    output_name,
+    title,
+):
+    """Save a Scenario D multi-target association plot."""
+    TRACKING_OUTPUT_DIR.mkdir(exist_ok=True)
+    output_path = TRACKING_OUTPUT_DIR / output_name
+
+    sensor_configs = scenario_data["sensor_configs"]
+    camera_pos = np.array(sensor_configs["camera"]["pos_ned"], dtype=float)
+
+    fig, ax = plt.subplots(figsize=(8, 7))
+
+    for target_index, target_id in enumerate(sorted(scenario_data["ground_truth"], key=int)):
+        _, north, east = truth_track(scenario_data, target_id=int(target_id))
+        color = RUN_COLORS[target_index % len(RUN_COLORS)]
+        ax.plot(east, north, "--", color=color, lw=1.6, alpha=0.65,
+                label=f"truth {target_id}")
+        ax.plot(east[0], north[0], "o", color=color, ms=5)
+        ax.plot(east[-1], north[-1], "D", color=color, ms=5)
+
+    radar_range = sensor_configs["radar"]["range_m"]
+    ax.add_patch(
+        plt.Circle(
+            (0.0, 0.0),
+            radar_range,
+            fill=False,
+            color=SENSOR_COLORS["radar"],
+            ls="--",
+            lw=1.0,
+            alpha=0.25,
+        )
+    )
+    ax.plot(0.0, 0.0, "^", color=SENSOR_COLORS["radar"], ms=9, label="Radar")
+
+    camera_range = sensor_configs["camera"]["range_m"]
+    camera_boresight = sensor_configs["camera"]["boresight_deg"]
+    ax.add_patch(
+        Arc(
+            (camera_pos[1], camera_pos[0]),
+            2 * camera_range,
+            2 * camera_range,
+            theta1=90 - camera_boresight - 90,
+            theta2=90 - camera_boresight + 90,
+            color=SENSOR_COLORS["camera"],
+            lw=1.0,
+            ls="--",
+            alpha=0.35,
+        )
+    )
+    ax.plot(camera_pos[1], camera_pos[0], "s",
+            color=SENSOR_COLORS["camera"], ms=8, label="Camera")
+
+    best_track_ids = set(target_track_ids.values())
+    for track in tracks:
+        if track.track_id not in best_track_ids:
+            continue
+        if len(track.history) < 2:
+            continue
+        history = np.array([record[1] for record in track.history])
+        target_id = None
+        for candidate_target, candidate_track in target_track_ids.items():
+            if candidate_track == track.track_id:
+                target_id = candidate_target
+                break
+        color = RUN_COLORS[int(target_id) % len(RUN_COLORS)]
+        ax.plot(history[:, 1], history[:, 0], "-", color=color, lw=2.2,
+                label=f"track {track.track_id} -> target {target_id}")
+
+    ax.set_xlabel("East [m]")
+    ax.set_ylabel("North [m]")
+    ax.set_title(title)
+    ax.set_aspect("equal", adjustable="box")
+    ax.grid(True, alpha=0.25)
+    ax.legend(fontsize=7, loc="best", ncol=2)
+    fig.tight_layout()
+    fig.savefig(output_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    return output_path
