@@ -53,9 +53,9 @@ class EKFTracker:
 
         return self.x
 
-    def update(self, z, h, H, R):
+    def update(self, z, h, H, R, angle_indices=(1,)):
         """
-        EKF phase 2: correct the prediction using a range/bearing measurement.
+        EKF phase 2: correct the prediction using one or more measurements.
 
         Returns
         -------
@@ -63,7 +63,8 @@ class EKFTracker:
             NIS = innovation.T S^-1 innovation, used for consistency checks.
         """
         innovation = z - h
-        innovation[1] = wrap_angle(innovation[1])
+        for angle_index in angle_indices:
+            innovation[angle_index] = wrap_angle(innovation[angle_index])
 
         S = H @ self.P @ H.T + R
         K = np.linalg.solve(S, H @ self.P).T
