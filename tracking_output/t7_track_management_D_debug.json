@@ -1,0 +1,6366 @@
+{
+  "scenario": "D",
+  "parameters": {
+    "M": 2,
+    "N": 5,
+    "K_del": 7
+  },
+  "plot_path": "/home/mello/miniconda3/AMS_project_2026/tracking_output/t7_track_management_D.png",
+  "metrics": [
+    {
+      "time": 1.0,
+      "motp": null,
+      "ce": 4,
+      "confirmed": 0,
+      "truth": 4
+    },
+    {
+      "time": 2.0,
+      "motp": null,
+      "ce": 4,
+      "confirmed": 0,
+      "truth": 4
+    },
+    {
+      "time": 3.0,
+      "motp": null,
+      "ce": 4,
+      "confirmed": 0,
+      "truth": 4
+    },
+    {
+      "time": 3.3333,
+      "motp": null,
+      "ce": 4,
+      "confirmed": 0,
+      "truth": 4
+    },
+    {
+      "time": 4.0,
+      "motp": null,
+      "ce": 4,
+      "confirmed": 0,
+      "truth": 4
+    },
+    {
+      "time": 5.0,
+      "motp": null,
+      "ce": 4,
+      "confirmed": 0,
+      "truth": 4
+    },
+    {
+      "time": 6.0,
+      "motp": null,
+      "ce": 4,
+      "confirmed": 0,
+      "truth": 4
+    },
+    {
+      "time": 6.6667,
+      "motp": 5.957257903824037,
+      "ce": 2,
+      "confirmed": 2,
+      "truth": 4
+    },
+    {
+      "time": 7.0,
+      "motp": 6.456442231792294,
+      "ce": 2,
+      "confirmed": 2,
+      "truth": 4
+    },
+    {
+      "time": 8.0,
+      "motp": 7.297898116245162,
+      "ce": 1,
+      "confirmed": 3,
+      "truth": 4
+    },
+    {
+      "time": 9.0,
+      "motp": 10.88871432184233,
+      "ce": 1,
+      "confirmed": 3,
+      "truth": 4
+    },
+    {
+      "time": 10.0,
+      "motp": 2.065294614742537,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 11.0,
+      "motp": 3.6073734909800095,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 12.0,
+      "motp": 6.262447289796167,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 13.0,
+      "motp": 9.031281890418118,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 13.3333,
+      "motp": 6.774580606878027,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 14.0,
+      "motp": 7.983239098374787,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 15.0,
+      "motp": 9.812042108388285,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 16.0,
+      "motp": 11.649684868876182,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 16.6667,
+      "motp": 7.217571902201345,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 17.0,
+      "motp": 7.548864143498561,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 18.0,
+      "motp": 8.40291062839953,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 19.0,
+      "motp": 9.45063700379867,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 20.0,
+      "motp": 194.13902356780835,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 21.0,
+      "motp": 194.13143599259683,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 22.0,
+      "motp": 195.17162291801807,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 23.0,
+      "motp": 196.33313764633175,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 23.3333,
+      "motp": 192.81297984173742,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 24.0,
+      "motp": 193.20893024619406,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 25.0,
+      "motp": 193.80880302713553,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 26.0,
+      "motp": 194.421295435227,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 26.6667,
+      "motp": 4.0183766035437465,
+      "ce": 1,
+      "confirmed": 3,
+      "truth": 4
+    },
+    {
+      "time": 27.0,
+      "motp": 4.253840123647266,
+      "ce": 1,
+      "confirmed": 3,
+      "truth": 4
+    },
+    {
+      "time": 28.0,
+      "motp": 4.990276883760168,
+      "ce": 1,
+      "confirmed": 3,
+      "truth": 4
+    },
+    {
+      "time": 29.0,
+      "motp": 5.726167768484146,
+      "ce": 1,
+      "confirmed": 3,
+      "truth": 4
+    },
+    {
+      "time": 30.0,
+      "motp": 4.056786205026478,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 31.0,
+      "motp": 4.607063522380032,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 32.0,
+      "motp": 5.154044624704396,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 33.0,
+      "motp": 5.7226398230788025,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 33.3333,
+      "motp": 4.414803567764518,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 34.0,
+      "motp": 5.078582288025181,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 35.0,
+      "motp": 6.089531556206733,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 36.0,
+      "motp": 7.010494113606249,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 36.6667,
+      "motp": 4.3418374131586255,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 37.0,
+      "motp": 4.4947507588730105,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 38.0,
+      "motp": 5.119106184846151,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 39.0,
+      "motp": 5.605814324520209,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 40.0,
+      "motp": 5.536177123023534,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 41.0,
+      "motp": 6.053953876470471,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 42.0,
+      "motp": 6.113483045942517,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 43.0,
+      "motp": 6.604296681778527,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 43.3333,
+      "motp": 5.606583298237158,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 44.0,
+      "motp": 5.739676669988742,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 45.0,
+      "motp": 6.128225826721895,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 46.0,
+      "motp": 6.518282440723045,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 46.6667,
+      "motp": 1.837902013308883,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 47.0,
+      "motp": 1.8553580606204172,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 48.0,
+      "motp": 1.9154778358231666,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 49.0,
+      "motp": 1.9834858864466618,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 50.0,
+      "motp": 1.4472357045628588,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 51.0,
+      "motp": 1.5896759585206905,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 52.0,
+      "motp": 1.5880432310168606,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 53.0,
+      "motp": 1.7310738731589481,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 53.3333,
+      "motp": 2.745572767576747,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 54.0,
+      "motp": 2.8964351981235503,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 55.0,
+      "motp": 3.086463190604806,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 56.0,
+      "motp": 3.122095169071077,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 56.6667,
+      "motp": 2.391019837259961,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 57.0,
+      "motp": 2.4189593929960918,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 58.0,
+      "motp": 2.64146227704172,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 59.0,
+      "motp": 2.7408226577777812,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 60.0,
+      "motp": 3.553170958175265,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 61.0,
+      "motp": 3.6742383161246037,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 62.0,
+      "motp": 3.870317630918881,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 63.0,
+      "motp": 4.006911157161908,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 63.3333,
+      "motp": 2.9547466714076176,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 64.0,
+      "motp": 2.9843004615892434,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 65.0,
+      "motp": 3.064883213963891,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 66.0,
+      "motp": 3.2146756274113057,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 66.6667,
+      "motp": 3.2788953778142584,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 67.0,
+      "motp": 3.3099881116051675,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 68.0,
+      "motp": 3.307727205450089,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 69.0,
+      "motp": 3.3856146565284133,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 70.0,
+      "motp": 3.9908176300889355,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 71.0,
+      "motp": 4.127109785785208,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 72.0,
+      "motp": 4.270666469539121,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 73.0,
+      "motp": 4.410275016444379,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 73.3333,
+      "motp": 3.7568070433839846,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 74.0,
+      "motp": 3.4543440140248958,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 75.0,
+      "motp": 3.5314115203149212,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 76.0,
+      "motp": 3.615868142301024,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 76.6667,
+      "motp": 3.5820686211394746,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 77.0,
+      "motp": 3.6043577740026427,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 78.0,
+      "motp": 3.656738238462426,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 79.0,
+      "motp": 3.728002038597817,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 80.0,
+      "motp": 3.2626470453955267,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 81.0,
+      "motp": 3.2860945388749725,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 82.0,
+      "motp": 3.370117797090145,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 83.0,
+      "motp": 3.401888527340639,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 83.3333,
+      "motp": 2.7286445362824345,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 84.0,
+      "motp": 2.579091958691596,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 85.0,
+      "motp": 2.5679964967050974,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 86.0,
+      "motp": 2.759750315684297,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 86.6667,
+      "motp": 2.2892598856820343,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 87.0,
+      "motp": 2.298019492135288,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 88.0,
+      "motp": 2.1866663343161914,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 89.0,
+      "motp": 2.2086927920802095,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 90.0,
+      "motp": 1.7043542868424506,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 91.0,
+      "motp": 1.7176496759253808,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 92.0,
+      "motp": 1.7465021782208925,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 93.0,
+      "motp": 1.7867544689413355,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 93.3333,
+      "motp": 2.4653152839896744,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 94.0,
+      "motp": 2.4987236528227057,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 95.0,
+      "motp": 2.552872838951891,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 96.0,
+      "motp": 2.6161227530715325,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 96.6667,
+      "motp": 2.1121028283275667,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 97.0,
+      "motp": 2.1424654574843665,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 98.0,
+      "motp": 2.232551712170547,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 99.0,
+      "motp": 2.3238983214798483,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 100.0,
+      "motp": 1.6438635504434516,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 101.0,
+      "motp": 1.6404176996635502,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 102.0,
+      "motp": 1.6458577925095517,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 103.0,
+      "motp": 1.6581365409043027,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 103.3333,
+      "motp": 1.5930873027199528,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 104.0,
+      "motp": 1.6165650489491352,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 105.0,
+      "motp": 1.6487728475764623,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 106.0,
+      "motp": 1.6840051296477019,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 106.6667,
+      "motp": 2.178851576826709,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 107.0,
+      "motp": 2.213690876934739,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 108.0,
+      "motp": 2.32311595580748,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 109.0,
+      "motp": 2.4352224588183287,
+      "ce": 0,
+      "confirmed": 4,
+      "truth": 4
+    },
+    {
+      "time": 110.0,
+      "motp": 3.124364354903821,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 111.0,
+      "motp": 3.274044580001118,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 112.0,
+      "motp": 3.5786041580345973,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 113.0,
+      "motp": 3.7543098095036513,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    },
+    {
+      "time": 113.3333,
+      "motp": 1.9198298199511612,
+      "ce": 2,
+      "confirmed": 6,
+      "truth": 4
+    },
+    {
+      "time": 114.0,
+      "motp": 2.1932885181503163,
+      "ce": 2,
+      "confirmed": 6,
+      "truth": 4
+    },
+    {
+      "time": 115.0,
+      "motp": 2.285957322544557,
+      "ce": 2,
+      "confirmed": 6,
+      "truth": 4
+    },
+    {
+      "time": 116.0,
+      "motp": 2.4919255405260072,
+      "ce": 2,
+      "confirmed": 6,
+      "truth": 4
+    },
+    {
+      "time": 116.6667,
+      "motp": 3.5100643223040366,
+      "ce": 2,
+      "confirmed": 6,
+      "truth": 4
+    },
+    {
+      "time": 117.0,
+      "motp": 3.558067452075546,
+      "ce": 2,
+      "confirmed": 6,
+      "truth": 4
+    },
+    {
+      "time": 118.0,
+      "motp": 3.701572960131591,
+      "ce": 2,
+      "confirmed": 6,
+      "truth": 4
+    },
+    {
+      "time": 119.0,
+      "motp": 3.846041802885752,
+      "ce": 2,
+      "confirmed": 6,
+      "truth": 4
+    },
+    {
+      "time": 120.0,
+      "motp": 2.944655320872095,
+      "ce": 1,
+      "confirmed": 5,
+      "truth": 4
+    }
+  ],
+  "scan_debug": [
+    {
+      "time": 1.0,
+      "confirmed_track_ids": [],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": []
+    },
+    {
+      "time": 2.0,
+      "confirmed_track_ids": [],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": []
+    },
+    {
+      "time": 3.0,
+      "confirmed_track_ids": [],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": []
+    },
+    {
+      "time": 3.3333,
+      "confirmed_track_ids": [],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": []
+    },
+    {
+      "time": 4.0,
+      "confirmed_track_ids": [],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": []
+    },
+    {
+      "time": 5.0,
+      "confirmed_track_ids": [],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": []
+    },
+    {
+      "time": 6.0,
+      "confirmed_track_ids": [],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": []
+    },
+    {
+      "time": 6.6667,
+      "confirmed_track_ids": [
+        3,
+        4
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 8.201858280827052
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 3.712657526821023
+        }
+      ]
+    },
+    {
+      "time": 7.0,
+      "confirmed_track_ids": [
+        3,
+        4
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 10.316191913841587
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 2.5966925497430005
+        }
+      ]
+    },
+    {
+      "time": 8.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 16.86321327752413
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 2.6552737471676897
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.3752073240436653
+        }
+      ]
+    },
+    {
+      "time": 9.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 23.521228209290943
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 6.301427815142061
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.843486941093994
+        }
+      ]
+    },
+    {
+      "time": 10.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 0.19166810823319935
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 2.462294698433182
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.3427339221926564
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.26448173011111
+        }
+      ]
+    },
+    {
+      "time": 11.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 0.9948756854699982
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 4.308770399058178
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.0007680683520417
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 7.12507981103982
+        }
+      ]
+    },
+    {
+      "time": 12.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 1.8181172223125504
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 6.250932950318103
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.7188555653813165
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 14.2618834211727
+        }
+      ]
+    },
+    {
+      "time": 13.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 2.642786975142398
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 8.215239943772678
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.4457278527658577
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 21.82137278999154
+        }
+      ]
+    },
+    {
+      "time": 13.3333,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 1.9571901887410468
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 9.570767097483069
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.0076963858899455
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 12.56266875539805
+        }
+      ]
+    },
+    {
+      "time": 14.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 1.9842213929578383
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 10.957752272230945
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.2507762573179395
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 15.740206470992424
+        }
+      ]
+    },
+    {
+      "time": 15.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 2.0294667256618113
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 13.03927278068912
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.605358801115593
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 20.574070126086614
+        }
+      ]
+    },
+    {
+      "time": 16.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 2.0937103273765056
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 15.118221000466754
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.95092377839456
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 25.43588436926691
+        }
+      ]
+    },
+    {
+      "time": 16.6667,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 2.1482735492851
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 16.503280862989044
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.474705075482811
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 8.744028121048427
+        }
+      ]
+    },
+    {
+      "time": 17.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 2.1807553873345054
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 17.190171686448117
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.4871033097110733
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 9.337426190500544
+        }
+      ]
+    },
+    {
+      "time": 18.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 2.2904959441749115
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 19.252359526833803
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.9471047707665644
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 11.121682271822843
+        }
+      ]
+    },
+    {
+      "time": 19.0,
+      "confirmed_track_ids": [
+        3,
+        4,
+        13,
+        20
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 3,
+          "target_id": 0,
+          "error_m": 2.426751194232873
+        },
+        {
+          "track_id": 4,
+          "target_id": 1,
+          "error_m": 21.32022621835831
+        },
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.1436373521902916
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 12.911933250413204
+        }
+      ]
+    },
+    {
+      "time": 20.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        46
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 0,
+          "error_m": 545.3734008786689
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 14.714184541343963
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.5813441844665084
+        },
+        {
+          "track_id": 46,
+          "target_id": 3,
+          "error_m": 212.8871646667541
+        }
+      ]
+    },
+    {
+      "time": 21.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        46
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 0,
+          "error_m": 538.0512809006755
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 16.52850757146184
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.9292361183282782
+        },
+        {
+          "track_id": 46,
+          "target_id": 3,
+          "error_m": 218.0167193799217
+        }
+      ]
+    },
+    {
+      "time": 22.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        46
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 0,
+          "error_m": 530.9672016827564
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 18.342198809886874
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 8.034757075044897
+        },
+        {
+          "track_id": 46,
+          "target_id": 3,
+          "error_m": 223.3423341043841
+        }
+      ]
+    },
+    {
+      "time": 23.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        46
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 0,
+          "error_m": 523.6773870019467
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 20.155735445761277
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 12.659946832870258
+        },
+        {
+          "track_id": 46,
+          "target_id": 3,
+          "error_m": 228.8394813047488
+        }
+      ]
+    },
+    {
+      "time": 23.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        46
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 0,
+          "error_m": 522.3816081647824
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 7.753222324427716
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 10.40777639369007
+        },
+        {
+          "track_id": 46,
+          "target_id": 3,
+          "error_m": 230.7093124840495
+        }
+      ]
+    },
+    {
+      "time": 24.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        46
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 0,
+          "error_m": 517.7274401526929
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 8.194784207834944
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 12.411259766537947
+        },
+        {
+          "track_id": 46,
+          "target_id": 3,
+          "error_m": 234.5022368577105
+        }
+      ]
+    },
+    {
+      "time": 25.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        46
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 0,
+          "error_m": 510.5458298092333
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 8.859826413684669
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 15.511651025461866
+        },
+        {
+          "track_id": 46,
+          "target_id": 3,
+          "error_m": 240.31790486016223
+        }
+      ]
+    },
+    {
+      "time": 26.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        46
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.1452856215989152
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 9.528602697968468
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 18.664707769534633
+        },
+        {
+          "track_id": 46,
+          "target_id": 0,
+          "error_m": 749.346585651806
+        }
+      ]
+    },
+    {
+      "time": 26.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.20280473825639633
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.009992882111379
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 8.842332190263464
+        }
+      ]
+    },
+    {
+      "time": 27.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.21935163342062097
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.150166400954282
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 9.392002336566895
+        }
+      ]
+    },
+    {
+      "time": 28.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.32527936312496303
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.5709992550744296
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 11.07455203308111
+        }
+      ]
+    },
+    {
+      "time": 29.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.38938561906518165
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.9975471353809415
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 12.791570551006316
+        }
+      ]
+    },
+    {
+      "time": 30.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.8854546859846354
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.243096613164309
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.2193715348385328
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 7.879221986118438
+        }
+      ]
+    },
+    {
+      "time": 31.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.9766222222632559
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.51683694923316
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.9700354593834737
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 8.964759458640238
+        }
+      ]
+    },
+    {
+      "time": 32.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        64
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.0077165342407715
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.805750241024322
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.720015795535911
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 10.082695928016578
+        }
+      ]
+    },
+    {
+      "time": 33.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        64
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.0957801645790277
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.095318627081798
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 5.485576175505058
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 11.213884325149325
+        }
+      ]
+    },
+    {
+      "time": 33.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        64
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.1240574053213856
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.379725889076322
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 5.740081017553885
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 5.415349959106478
+        }
+      ]
+    },
+    {
+      "time": 34.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        64
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.1786295701237353
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.590497981837705
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 6.254550052758989
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 7.290651547380298
+        }
+      ]
+    },
+    {
+      "time": 35.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        64
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.2611542587344229
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.91350702320943
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 7.02615493855294
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 10.157310004330137
+        }
+      ]
+    },
+    {
+      "time": 36.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        64
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.9395236988678383
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 6.248257384587107
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 7.806071443949929
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 13.048123927020123
+        }
+      ]
+    },
+    {
+      "time": 36.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        64
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.1731867342725817
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.47623634242332
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.647441512056389
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 6.070485063882209
+        }
+      ]
+    },
+    {
+      "time": 37.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        64
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.1909535936459577
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.581788587326019
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.824238714354525
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 6.38202214016554
+        }
+      ]
+    },
+    {
+      "time": 38.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.871203988468432
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.907720229563641
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 5.351683801460045
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 7.345816719892488
+        }
+      ]
+    },
+    {
+      "time": 39.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.9663084125196826
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 6.241217500582038
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 5.888010065663063
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 8.327721319316053
+        }
+      ]
+    },
+    {
+      "time": 40.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.072554541105858
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 6.576545077447285
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.0288510785793443
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 10.466757794961648
+        }
+      ]
+    },
+    {
+      "time": 41.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.1866681304116997
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 6.915612087045058
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.3414079871240334
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 11.772127301301095
+        }
+      ]
+    },
+    {
+      "time": 42.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.45645012569178683
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 7.243950680083946
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.6641843452109555
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 13.08934703278338
+        }
+      ]
+    },
+    {
+      "time": 43.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.4449324009851492
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 7.572557575696322
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.9932598525202883
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 14.406436897912345
+        }
+      ]
+    },
+    {
+      "time": 43.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.9758182947169015
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.553199474088528
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.0535409886425005
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 14.843774435500702
+        }
+      ]
+    },
+    {
+      "time": 44.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.4602772753207229
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.658223586197696
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.1288839755556774
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 15.711321842880873
+        }
+      ]
+    },
+    {
+      "time": 45.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.4421523338420712
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.8042255595998204
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.2563012842866301
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 17.01022412915906
+        }
+      ]
+    },
+    {
+      "time": 46.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.4153198422138407
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.946282193117861
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.3963110399951144
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 18.31521668756536
+        }
+      ]
+    },
+    {
+      "time": 46.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.7046170055280416
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.096459220844772
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.921202066871253
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.629329759991465
+        }
+      ]
+    },
+    {
+      "time": 47.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.700544378639452
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.1128719848969646
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.9107007841134964
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.6973150948317555
+        }
+      ]
+    },
+    {
+      "time": 48.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.6876062173905578
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.179258163909494
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.878650352732459
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.916396609260156
+        }
+      ]
+    },
+    {
+      "time": 49.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.6771087527303902
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.254029737559635
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.8438867859566335
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.158918269539989
+        }
+      ]
+    },
+    {
+      "time": 50.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.5199962479342586
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 0.8251780119096213
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.024436324941404
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 1.4193322334661507
+        }
+      ]
+    },
+    {
+      "time": 51.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.6731034955922621
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 0.9631821104124407
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.046816090659538
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 1.675602137418522
+        }
+      ]
+    },
+    {
+      "time": 52.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        107
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.2195737438002385
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.1112185181229874
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.0765614299250057
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 1.9448192322192106
+        }
+      ]
+    },
+    {
+      "time": 53.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        107
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.33636436483363
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.2567020813933982
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.1104697608750462
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.2207592855337186
+        }
+      ]
+    },
+    {
+      "time": 53.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        107
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.122200824751544
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.680241744390747
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.6731106732337357
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.506737827930963
+        }
+      ]
+    },
+    {
+      "time": 54.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        107
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.2990664105797451
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.807584790242451
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.759406781608265
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.7196828100637416
+        }
+      ]
+    },
+    {
+      "time": 55.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        107
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.423771606407605
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.0035345918157
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.8791037334703247
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.039442830725595
+        }
+      ]
+    },
+    {
+      "time": 56.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        107
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.934878990948746
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.191933860530442
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.00276136989814
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.35880645490698
+        }
+      ]
+    },
+    {
+      "time": 56.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        107
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.9712028878401958
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.5087341783105357
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.9376223215667876
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.146519961322324
+        }
+      ]
+    },
+    {
+      "time": 57.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        107
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.9890948639053234
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.5738466597080447
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.961865106895164
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.151030941475834
+        }
+      ]
+    },
+    {
+      "time": 58.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.603457729174092
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.7769266037994114
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.028426236592893
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.1570385386004833
+        }
+      ]
+    },
+    {
+      "time": 59.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.7362275805948921
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.9711974854096868
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.101297219798467
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.154568345308078
+        }
+      ]
+    },
+    {
+      "time": 60.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.5732078221762964
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 0.9433350884392354
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.204552595580099
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 7.491588326505431
+        }
+      ]
+    },
+    {
+      "time": 61.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.6651737822066701
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 0.9559112055144746
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.295996850156394
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 7.7798714266208755
+        }
+      ]
+    },
+    {
+      "time": 62.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.0339541597305812
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 0.9662641970874398
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.388777703587574
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 8.092274463269929
+        }
+      ]
+    },
+    {
+      "time": 63.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.1424674738589315
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 0.9823780860461157
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.482881992166775
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 8.419917076575809
+        }
+      ]
+    },
+    {
+      "time": 63.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        139
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.661998308360282
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.5295824856872016
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.012023701368686
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.6153821902143015
+        }
+      ]
+    },
+    {
+      "time": 64.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        139
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.6589747149896956
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.6104041463238294
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.983522819441681
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.684300165601767
+        }
+      ]
+    },
+    {
+      "time": 65.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        139
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.7977819842698146
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.7323305327595664
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.9405405210728663
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.788879817753316
+        }
+      ]
+    },
+    {
+      "time": 66.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        139
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.197999190929266
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.862452626252048
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.9038531114288957
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.894397581035013
+        }
+      ]
+    },
+    {
+      "time": 66.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        139
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.713505734914965
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.8074498362523164
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.5798651209661962
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.014760819123556
+        }
+      ]
+    },
+    {
+      "time": 67.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        139
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.780344550909148
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.8678932668810058
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.558454845658629
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.0332597829718875
+        }
+      ]
+    },
+    {
+      "time": 68.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        139
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.615735331059228
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.0512850895008485
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.482415087079103
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.081473314161175
+        }
+      ]
+    },
+    {
+      "time": 69.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        139
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.7904350608305455
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.231147786295665
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.407255666917876
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 4.113620112069566
+        }
+      ]
+    },
+    {
+      "time": 70.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.9658507663354157
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.798555244199194
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.7844761647392122
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.414388345081922
+        }
+      ]
+    },
+    {
+      "time": 71.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.135259316005311
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.980760045999944
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 3.908918946708933
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.4835008344266454
+        }
+      ]
+    },
+    {
+      "time": 72.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.32156657890165
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.157646281088809
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.044529339179241
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.5589236789867833
+        }
+      ]
+    },
+    {
+      "time": 73.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.4766443965853675
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.328981609201537
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.185415085893446
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.6500589740971634
+        }
+      ]
+    },
+    {
+      "time": 73.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.10606994680831
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.601224657628503
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.6398799672221136
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.680053601877013
+        }
+      ]
+    },
+    {
+      "time": 74.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.7273682223972604
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.687963552082085
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.6530971860925034
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.748947095527734
+        }
+      ]
+    },
+    {
+      "time": 75.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.77704990765868
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.819634668155886
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.663121215165212
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.8658402902799067
+        }
+      ]
+    },
+    {
+      "time": 76.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.854492961202123
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.953556786598425
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.6734524768621606
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.9819703445413883
+        }
+      ]
+    },
+    {
+      "time": 76.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.8994580281789224
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.042314379215493
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.568633585720745
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.8178684914427388
+        }
+      ]
+    },
+    {
+      "time": 77.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.92165783147797
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.084365728809005
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.57487151776306
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.836536017960536
+        }
+      ]
+    },
+    {
+      "time": 78.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.916558181290664
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.205796748555073
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.605116390131366
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.8994816338726
+        }
+      ]
+    },
+    {
+      "time": 79.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.9769521642621566
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.330278567393419
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.6413611542477367
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.963416268487956
+        }
+      ]
+    },
+    {
+      "time": 80.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.9991183942280664
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.431315350926884
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.4229339269107175
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.1972205095164403
+        }
+      ]
+    },
+    {
+      "time": 81.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.0043719141379404
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.548750103004407
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.413912362343919
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.177343776013624
+        }
+      ]
+    },
+    {
+      "time": 82.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.256424219143788
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.677890618945546
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.404117895010471
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.1420384552607756
+        }
+      ]
+    },
+    {
+      "time": 83.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.2823471663379498
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 5.811992634298524
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.4097666356404646
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.1034476730856193
+        }
+      ]
+    },
+    {
+      "time": 83.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.2030166327761016
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.3649957980680525
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.9535321155354346
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.3930335987501494
+        }
+      ]
+    },
+    {
+      "time": 84.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.6326370697093895
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.361473155107074
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.9458551108287307
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.3764024991211894
+        }
+      ]
+    },
+    {
+      "time": 85.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.6162168038937628
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.3612892121521485
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.935276170342259
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.359203800432219
+        }
+      ]
+    },
+    {
+      "time": 86.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.407698774126359
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.3717265256997817
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.9150578760007555
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.344518086910291
+        }
+      ]
+    },
+    {
+      "time": 86.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.254563313570915
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.2412727090925495
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.35750195099387144
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.303701569070801
+        }
+      ]
+    },
+    {
+      "time": 87.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.259903590112167
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.2642632786131935
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.3943355190888939
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.2735755807268982
+        }
+      ]
+    },
+    {
+      "time": 88.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.7313647907434715
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.32473079892017
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.5081829578240334
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.182386789777092
+        }
+      ]
+    },
+    {
+      "time": 89.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 1.7139819938023353
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.393035121131612
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.6263565912218279
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.1013974621650644
+        }
+      ]
+    },
+    {
+      "time": 90.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.592092023898605
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.0929666920950862
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.2491398561607496
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.8832185752153623
+        }
+      ]
+    },
+    {
+      "time": 91.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.61602957069819
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.0069903263482596
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.3488684199250256
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.8987103867300477
+        }
+      ]
+    },
+    {
+      "time": 92.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.6471413426552286
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.9320895447993378
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.4491668431606681
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.9576109822683353
+        }
+      ]
+    },
+    {
+      "time": 93.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.683941872373059
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.854778712484664
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.5568127249508266
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 1.051484565956793
+        }
+      ]
+    },
+    {
+      "time": 93.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.8206579449556344
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.7992623050013847
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.379412542248368
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.8619283437533112
+        }
+      ]
+    },
+    {
+      "time": 94.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.8894040378344243
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.8206509254577385
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.501153161887914
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.783686486110746
+        }
+      ]
+    },
+    {
+      "time": 95.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.002786542659738
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.8581343719647387
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.681537006313989
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.6690334348690969
+        }
+      ]
+    },
+    {
+      "time": 96.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.134904401328146
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.890161319219323
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.8680704951105134
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.5713547966281475
+        }
+      ]
+    },
+    {
+      "time": 96.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.953226959678095
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.9097573862029855
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.7601156053677877
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.8253113620613972
+        }
+      ]
+    },
+    {
+      "time": 97.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.988584429591103
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.916771585069841
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.7853474105806451
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.8791584046958769
+        }
+      ]
+    },
+    {
+      "time": 98.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.095077590282443
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.934227990352769
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.866516602830227
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 1.0343846652167485
+        }
+      ]
+    },
+    {
+      "time": 99.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.190701980579238
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.9430395582283047
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.9612065995441059
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 1.2006451475677444
+        }
+      ]
+    },
+    {
+      "time": 100.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.2637568536828296
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.434089473686038
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.6497747305630839
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.22783314384185516
+        }
+      ]
+    },
+    {
+      "time": 101.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.2815796038722147
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.3663965508019473
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.7285643063409535
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.1851303376390845
+        }
+      ]
+    },
+    {
+      "time": 102.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.292151687525876
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.3061389105391368
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.8038080201997495
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.18133255177344418
+        }
+      ]
+    },
+    {
+      "time": 103.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.298790079453328
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.255085529955963
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.8642188620303013
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.214451692177619
+        }
+      ]
+    },
+    {
+      "time": 103.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.7853351294504756
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.7107070711115433
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.7287825244210905
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.147524485896702
+        }
+      ]
+    },
+    {
+      "time": 104.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.6952416953199505
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.7657511645202635
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.7921403896403224
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.213126946316004
+        }
+      ]
+    },
+    {
+      "time": 105.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.5598497288239497
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.84468362210023
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.8846862653278691
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.3058717740538004
+        }
+      ]
+    },
+    {
+      "time": 106.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 0.4241058966497723
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.9395371898141478
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.9709183266046993
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.4014591055221874
+        }
+      ]
+    },
+    {
+      "time": 106.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.9573949177591348
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.3694794772289154
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.9183125300305216
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.4702193822882625
+        }
+      ]
+    },
+    {
+      "time": 107.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.018346066747352
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.3831885269649955
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 0.9471431517024075
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.5060857623242017
+        }
+      ]
+    },
+    {
+      "time": 108.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.2117837097257573
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.4314181198363192
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.0370625706792476
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.612199422988595
+        }
+      ]
+    },
+    {
+      "time": 109.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.416681225137596
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.481129337299547
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.1318079943152684
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.7112712785209023
+        }
+      ]
+    },
+    {
+      "time": 110.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.8684293075146017
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.2621449925270944
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.284517374800495
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.082365744773093
+        }
+      ]
+    },
+    {
+      "time": 111.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.070260942216965
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.353927585705881
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.548257851205718
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.1237319408759108
+        }
+      ]
+    },
+    {
+      "time": 112.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.281927968960771
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.4521480935650595
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 4.831052321997475
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.749288247615083
+        }
+      ]
+    },
+    {
+      "time": 113.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.504623940735036
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.5564149658173845
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 5.136195588321308
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.8200047431408763
+        }
+      ]
+    },
+    {
+      "time": 113.3333,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275,
+        286
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.6117561818372215
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 1.978625996860226
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.3140974031538792
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 0.7748396979533179
+        }
+      ]
+    },
+    {
+      "time": 114.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275,
+        286
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.7335786388319865
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.0304260439146926
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.372303977680341
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 1.6368454121742462
+        }
+      ]
+    },
+    {
+      "time": 115.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275,
+        286
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 3.920743788413648
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.116268254270327
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.4569486631252073
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 1.6498685843690468
+        }
+      ]
+    },
+    {
+      "time": 116.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275,
+        286
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.102962836622963
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.20758002495392
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 1.550571526645806
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 2.10658777388134
+        }
+      ]
+    },
+    {
+      "time": 116.6667,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275,
+        286
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.226790527432328
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.8798581477766962
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.483386820715908
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.4502217932912123
+        }
+      ]
+    },
+    {
+      "time": 117.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275,
+        286
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.28611953312407
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 3.9312666058014902
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.5325833852178854
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.4823002841587405
+        }
+      ]
+    },
+    {
+      "time": 118.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275,
+        286
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.47145598600529
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.083858244714612
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.675209259361785
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.5757683504446773
+        }
+      ]
+    },
+    {
+      "time": 119.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275,
+        286
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 4.658440115018913
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 4.2331649688749975
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.8283847566801024
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.6641773709689973
+        }
+      ]
+    },
+    {
+      "time": 120.0,
+      "confirmed_track_ids": [
+        13,
+        20,
+        42,
+        62,
+        275
+      ],
+      "active_truth_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matches": [
+        {
+          "track_id": 13,
+          "target_id": 3,
+          "error_m": 2.9962539258831176
+        },
+        {
+          "track_id": 20,
+          "target_id": 2,
+          "error_m": 2.0162926149365052
+        },
+        {
+          "track_id": 42,
+          "target_id": 1,
+          "error_m": 2.986291686600911
+        },
+        {
+          "track_id": 62,
+          "target_id": 0,
+          "error_m": 3.7797830560678474
+        }
+      ]
+    }
+  ],
+  "target_errors": {
+    "3": 3.800640857397924,
+    "2": 7.481198264502046,
+    "1": 5.1401859381172414,
+    "0": 6.169061504954407
+  },
+  "target_track_ids": {
+    "3": 13,
+    "2": 20,
+    "1": 42,
+    "0": 62
+  },
+  "final_tracks": [
+    {
+      "track_id": 13,
+      "status": "coasting",
+      "total_assignments": 63,
+      "missed_detections": 0,
+      "history_length": 232,
+      "dominant_target_id": 3
+    },
+    {
+      "track_id": 20,
+      "status": "confirmed",
+      "total_assignments": 31,
+      "missed_detections": 0,
+      "history_length": 244,
+      "dominant_target_id": 2
+    },
+    {
+      "track_id": 42,
+      "status": "coasting",
+      "total_assignments": 30,
+      "missed_detections": 4,
+      "history_length": 217,
+      "dominant_target_id": 1
+    },
+    {
+      "track_id": 62,
+      "status": "confirmed",
+      "total_assignments": 31,
+      "missed_detections": 0,
+      "history_length": 198,
+      "dominant_target_id": 0
+    },
+    {
+      "track_id": 275,
+      "status": "coasting",
+      "total_assignments": 3,
+      "missed_detections": 7,
+      "history_length": 28,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 281,
+      "status": "tentative",
+      "total_assignments": 3,
+      "missed_detections": 0,
+      "history_length": 15,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 284,
+      "status": "tentative",
+      "total_assignments": 2,
+      "missed_detections": 4,
+      "history_length": 13,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 287,
+      "status": "tentative",
+      "total_assignments": 2,
+      "missed_detections": 4,
+      "history_length": 13,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 291,
+      "status": "tentative",
+      "total_assignments": 2,
+      "missed_detections": 0,
+      "history_length": 9,
+      "dominant_target_id": 1
+    },
+    {
+      "track_id": 293,
+      "status": "tentative",
+      "total_assignments": 2,
+      "missed_detections": 5,
+      "history_length": 9,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 295,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 7,
+      "history_length": 8,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 296,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 7,
+      "history_length": 8,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 297,
+      "status": "tentative",
+      "total_assignments": 2,
+      "missed_detections": 2,
+      "history_length": 8,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 298,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 7,
+      "history_length": 8,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 299,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 4,
+      "history_length": 5,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 300,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 4,
+      "history_length": 5,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 301,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 4,
+      "history_length": 5,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 302,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 4,
+      "history_length": 5,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 303,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 4,
+      "history_length": 5,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 304,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 4,
+      "history_length": 5,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 305,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 4,
+      "history_length": 5,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 306,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 2,
+      "history_length": 3,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 307,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 0,
+      "history_length": 1,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 308,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 0,
+      "history_length": 1,
+      "dominant_target_id": null
+    },
+    {
+      "track_id": 309,
+      "status": "tentative",
+      "total_assignments": 1,
+      "missed_detections": 0,
+      "history_length": 1,
+      "dominant_target_id": null
+    }
+  ]
+}

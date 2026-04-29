@@ -1,0 +1,1030 @@
+{
+  "summary": {
+    "scenario": "D",
+    "avg_motp": 15.050895523875392,
+    "avg_ce": 0.7569444444444444,
+    "metrics": [
+      {
+        "time": 1.0,
+        "motp": null,
+        "ce": 4,
+        "confirmed": 0,
+        "truth": 4
+      },
+      {
+        "time": 2.0,
+        "motp": null,
+        "ce": 4,
+        "confirmed": 0,
+        "truth": 4
+      },
+      {
+        "time": 3.0,
+        "motp": null,
+        "ce": 4,
+        "confirmed": 0,
+        "truth": 4
+      },
+      {
+        "time": 3.3333,
+        "motp": null,
+        "ce": 4,
+        "confirmed": 0,
+        "truth": 4
+      },
+      {
+        "time": 4.0,
+        "motp": null,
+        "ce": 4,
+        "confirmed": 0,
+        "truth": 4
+      },
+      {
+        "time": 5.0,
+        "motp": null,
+        "ce": 4,
+        "confirmed": 0,
+        "truth": 4
+      },
+      {
+        "time": 6.0,
+        "motp": null,
+        "ce": 4,
+        "confirmed": 0,
+        "truth": 4
+      },
+      {
+        "time": 6.6667,
+        "motp": 5.957257903824037,
+        "ce": 2,
+        "confirmed": 2,
+        "truth": 4
+      },
+      {
+        "time": 7.0,
+        "motp": 6.456442231792294,
+        "ce": 2,
+        "confirmed": 2,
+        "truth": 4
+      },
+      {
+        "time": 8.0,
+        "motp": 7.297898116245162,
+        "ce": 1,
+        "confirmed": 3,
+        "truth": 4
+      },
+      {
+        "time": 9.0,
+        "motp": 10.88871432184233,
+        "ce": 1,
+        "confirmed": 3,
+        "truth": 4
+      },
+      {
+        "time": 10.0,
+        "motp": 2.065294614742537,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 11.0,
+        "motp": 3.6073734909800126,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 12.0,
+        "motp": 6.262447289796174,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 13.0,
+        "motp": 9.031281890418128,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 13.3333,
+        "motp": 6.774580606878085,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 14.0,
+        "motp": 7.983239098374867,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 15.0,
+        "motp": 9.812042108388368,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 16.0,
+        "motp": 11.649684868876271,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 16.6667,
+        "motp": 7.217571902201436,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 17.0,
+        "motp": 7.5488641434986485,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 18.0,
+        "motp": 8.402910628399644,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 19.0,
+        "motp": 9.450637003798795,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 20.0,
+        "motp": 5.473065217710711,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      },
+      {
+        "time": 21.0,
+        "motp": 11.475334807896601,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 22.0,
+        "motp": 12.461960479160929,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 23.0,
+        "motp": 192.40420891588516,
+        "ce": 1,
+        "confirmed": 3,
+        "truth": 4
+      },
+      {
+        "time": 23.3333,
+        "motp": 188.25348666182447,
+        "ce": 1,
+        "confirmed": 3,
+        "truth": 4
+      },
+      {
+        "time": 24.0,
+        "motp": 188.9445716660946,
+        "ce": 1,
+        "confirmed": 3,
+        "truth": 4
+      },
+      {
+        "time": 25.0,
+        "motp": 190.11182792889454,
+        "ce": 1,
+        "confirmed": 3,
+        "truth": 4
+      },
+      {
+        "time": 26.0,
+        "motp": 191.28480932888453,
+        "ce": 1,
+        "confirmed": 3,
+        "truth": 4
+      },
+      {
+        "time": 26.6667,
+        "motp": 189.29382282979432,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 27.0,
+        "motp": 189.71510457785922,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 28.0,
+        "motp": 191.24210806414052,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 29.0,
+        "motp": 8.672632170364148,
+        "ce": 1,
+        "confirmed": 3,
+        "truth": 4
+      },
+      {
+        "time": 30.0,
+        "motp": 5.121537820078592,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 31.0,
+        "motp": 6.186430114598183,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 32.0,
+        "motp": 7.249031605344575,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 33.0,
+        "motp": 8.33094764379287,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 33.3333,
+        "motp": 7.193919915836608,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 34.0,
+        "motp": 8.198259137426627,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 35.0,
+        "motp": 9.719026817663915,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 36.0,
+        "motp": 11.14629851139702,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 36.6667,
+        "motp": 4.669545719389715,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 37.0,
+        "motp": 4.830936025898767,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 38.0,
+        "motp": 5.480965153368363,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 39.0,
+        "motp": 5.99409220426413,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 40.0,
+        "motp": 5.761137324695326,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 41.0,
+        "motp": 6.285654521649159,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 42.0,
+        "motp": 6.8111807825245005,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 43.0,
+        "motp": 7.335344737223256,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 43.3333,
+        "motp": 6.043865782001543,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 44.0,
+        "motp": 6.167931278106311,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 45.0,
+        "motp": 6.57216771115593,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 46.0,
+        "motp": 6.978292928755816,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 46.6667,
+        "motp": 2.290380263662154,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 47.0,
+        "motp": 2.326104884851957,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 48.0,
+        "motp": 2.440883230803456,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 49.0,
+        "motp": 2.5628116564536634,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 50.0,
+        "motp": 1.68258506251295,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 51.0,
+        "motp": 1.8649414673403575,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 52.0,
+        "motp": 1.8990651980288011,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 53.0,
+        "motp": 2.08525240481507,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 53.3333,
+        "motp": 2.993729848924384,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 54.0,
+        "motp": 3.1851567116402593,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 55.0,
+        "motp": 3.4135323608890564,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 56.0,
+        "motp": 3.6165218659462806,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 56.6667,
+        "motp": 2.9899691729283284,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 57.0,
+        "motp": 3.033897595885881,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 58.0,
+        "motp": 3.1858362980901824,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 59.0,
+        "motp": 3.32161910542851,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 60.0,
+        "motp": 3.682380798077684,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 61.0,
+        "motp": 3.8222766282330367,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 62.0,
+        "motp": 3.8152155520445827,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 63.0,
+        "motp": 3.951440614986239,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 63.3333,
+        "motp": 2.582346051354083,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 64.0,
+        "motp": 2.679443469081001,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 65.0,
+        "motp": 2.7582139025070926,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 66.0,
+        "motp": 2.9464786427287697,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 66.6667,
+        "motp": 2.9954197991037406,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 67.0,
+        "motp": 3.025206063908935,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 68.0,
+        "motp": 3.062163085043558,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 69.0,
+        "motp": 3.138147877460722,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 70.0,
+        "motp": 3.669209550989554,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 71.0,
+        "motp": 3.7971730679676527,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 72.0,
+        "motp": 3.9263255520611593,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 73.0,
+        "motp": 4.055496083836536,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 73.3333,
+        "motp": 3.4818063119575506,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 74.0,
+        "motp": 3.234244263957962,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 75.0,
+        "motp": 3.312242390991435,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 76.0,
+        "motp": 3.4133711938524147,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 76.6667,
+        "motp": 3.347006956476992,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 77.0,
+        "motp": 3.36864985399931,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 78.0,
+        "motp": 3.4588432748794995,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 79.0,
+        "motp": 3.529603240838515,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 80.0,
+        "motp": 3.176750588974845,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 81.0,
+        "motp": 3.2079250676906903,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 82.0,
+        "motp": 3.3120971857331694,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 83.0,
+        "motp": 3.3535187456485644,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 83.3333,
+        "motp": 2.7009074041603975,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 84.0,
+        "motp": 2.562649278932556,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 85.0,
+        "motp": 2.562235701429462,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 86.0,
+        "motp": 2.7706874860784323,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 86.6667,
+        "motp": 2.213481536023234,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 87.0,
+        "motp": 2.226594221097461,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 88.0,
+        "motp": 2.1345379166701397,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 89.0,
+        "motp": 2.1714046768858366,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 90.0,
+        "motp": 1.731066384326526,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 91.0,
+        "motp": 1.754692293515814,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 92.0,
+        "motp": 1.7942006690671606,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 93.0,
+        "motp": 1.8455887059495335,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 93.3333,
+        "motp": 2.4893983366111785,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 94.0,
+        "motp": 2.5314771253694026,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 95.0,
+        "motp": 2.5986489087024176,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 96.0,
+        "motp": 2.6748357532978586,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 96.6667,
+        "motp": 2.1632386281711034,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 97.0,
+        "motp": 2.197520402151629,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 98.0,
+        "motp": 2.299301403811146,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 99.0,
+        "motp": 2.4022847481543206,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 100.0,
+        "motp": 1.7162410282299416,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 101.0,
+        "motp": 1.7202511164492165,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 102.0,
+        "motp": 1.7332039260892296,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 103.0,
+        "motp": 1.7530498541077528,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 103.3333,
+        "motp": 1.669767942934096,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 104.0,
+        "motp": 1.6984456430263015,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 105.0,
+        "motp": 1.7381733800973267,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 106.0,
+        "motp": 1.7799412467059037,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 106.6667,
+        "motp": 2.2054164328752854,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 107.0,
+        "motp": 2.2397069138945294,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 108.0,
+        "motp": 2.3474902422659114,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 109.0,
+        "motp": 2.4578500866590107,
+        "ce": 0,
+        "confirmed": 4,
+        "truth": 4
+      },
+      {
+        "time": 110.0,
+        "motp": 3.1486900131692486,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 111.0,
+        "motp": 3.2979200871636434,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 112.0,
+        "motp": 3.6018551826421956,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 113.0,
+        "motp": 3.7768271008074787,
+        "ce": 1,
+        "confirmed": 5,
+        "truth": 4
+      },
+      {
+        "time": 113.3333,
+        "motp": 1.9259421745503673,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      },
+      {
+        "time": 114.0,
+        "motp": 2.1985060104446092,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      },
+      {
+        "time": 115.0,
+        "motp": 2.289956913005712,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      },
+      {
+        "time": 116.0,
+        "motp": 2.4948317099264568,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      },
+      {
+        "time": 116.6667,
+        "motp": 3.5086608527549243,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      },
+      {
+        "time": 117.0,
+        "motp": 3.5562867106094025,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      },
+      {
+        "time": 118.0,
+        "motp": 3.698551504294898,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      },
+      {
+        "time": 119.0,
+        "motp": 3.8416444793895144,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      },
+      {
+        "time": 120.0,
+        "motp": 2.937703092105819,
+        "ce": 2,
+        "confirmed": 6,
+        "truth": 4
+      }
+    ],
+    "tracks_initiated": 284,
+    "tracks_deleted": 253,
+    "duplicate_merges": 1,
+    "tracks_alive": 30,
+    "confirmed_alive": 6,
+    "false_assignments": 87,
+    "plot_path": null,
+    "debug_path": "/home/mello/miniconda3/AMS_project_2026/tracking_output/t7_track_management_D_debug.json"
+  },
+  "parameters": {
+    "M": 2,
+    "N": 5,
+    "K_del": 10
+  }
+}
