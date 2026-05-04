@@ -171,6 +171,134 @@ def plot_tracking_result(
     return output_path
 
 
+def plot_multi_target_scene(ax, scenario_data, tracks, target_track_ids):
+    """
+    Plot tracking scene (ground truth + sensors + selected tracks)
+    onto an existing matplotlib axis.
+
+    This is shared between T6 and T7 to ensure identical visuals.
+    """
+
+    sensor_configs = scenario_data["sensor_configs"]
+    camera_pos = np.array(sensor_configs["camera"]["pos_ned"], dtype=float)
+
+    # -------------------------
+    # Ground truth
+    # -------------------------
+    for target_index, target_id in enumerate(
+        sorted(scenario_data["ground_truth"], key=int)
+    ):
+        _, north, east = truth_track(
+            scenario_data, target_id=int(target_id)
+        )
+
+        color = RUN_COLORS[target_index % len(RUN_COLORS)]
+
+        ax.plot(
+            east, north,
+            "--",
+            color=color,
+            lw=1.6,
+            alpha=0.65,
+            label=f"truth {target_id}",
+        )
+        ax.plot(east[0], north[0], "o", color=color, ms=5)
+        ax.plot(east[-1], north[-1], "D", color=color, ms=5)
+
+    # -------------------------
+    # Radar
+    # -------------------------
+    radar_range = sensor_configs["radar"]["range_m"]
+
+    ax.add_patch(
+        plt.Circle(
+            (0.0, 0.0),
+            radar_range,
+            fill=False,
+            color=SENSOR_COLORS["radar"],
+            ls="--",
+            lw=1.0,
+            alpha=0.25,
+        )
+    )
+    ax.plot(
+        0.0, 0.0,
+        "^",
+        color=SENSOR_COLORS["radar"],
+        ms=9,
+        label="Radar",
+    )
+
+    # -------------------------
+    # Camera
+    # -------------------------
+    camera_range = sensor_configs["camera"]["range_m"]
+    camera_boresight = sensor_configs["camera"]["boresight_deg"]
+
+    ax.add_patch(
+        Arc(
+            (camera_pos[1], camera_pos[0]),
+            2 * camera_range,
+            2 * camera_range,
+            theta1=90 - camera_boresight - 90,
+            theta2=90 - camera_boresight + 90,
+            color=SENSOR_COLORS["camera"],
+            lw=1.0,
+            ls="--",
+            alpha=0.35,
+        )
+    )
+    ax.plot(
+        camera_pos[1],
+        camera_pos[0],
+        "s",
+        color=SENSOR_COLORS["camera"],
+        ms=8,
+        label="Camera",
+    )
+
+    # -------------------------
+    # Tracks (same logic as T6)
+    # -------------------------
+    best_track_ids = set(target_track_ids.values())
+
+    for track in tracks:
+        if track.track_id not in best_track_ids:
+            continue
+        if len(track.history) < 2:
+            continue
+
+        history = np.array([record[1] for record in track.history])
+
+        target_id = None
+        for candidate_target, candidate_track in target_track_ids.items():
+            if candidate_track == track.track_id:
+                target_id = candidate_target
+                break
+
+        if target_id is None:
+            continue  # safety
+
+        color = RUN_COLORS[int(target_id) % len(RUN_COLORS)]
+
+        ax.plot(
+            history[:, 1],
+            history[:, 0],
+            "-",
+            color=color,
+            lw=2.2,
+            label=f"track {track.track_id} -> target {target_id}",
+        )
+
+    # -------------------------
+    # Formatting
+    # -------------------------
+    ax.set_xlabel("East [m]")
+    ax.set_ylabel("North [m]")
+    ax.set_aspect("equal", adjustable="box")
+    ax.grid(True, alpha=0.25)
+    ax.legend(fontsize=7, loc="best", ncol=2)
+
 def plot_t6_tracks(
     scenario_data,
     tracks,
@@ -187,69 +315,60 @@ def plot_t6_tracks(
 
     fig, ax = plt.subplots(figsize=(8, 7))
 
-    for target_index, target_id in enumerate(sorted(scenario_data["ground_truth"], key=int)):
-        _, north, east = truth_track(scenario_data, target_id=int(target_id))
-        color = RUN_COLORS[target_index % len(RUN_COLORS)]
-        ax.plot(east, north, "--", color=color, lw=1.6, alpha=0.65,
-                label=f"truth {target_id}")
-        ax.plot(east[0], north[0], "o", color=color, ms=5)
-        ax.plot(east[-1], north[-1], "D", color=color, ms=5)
+    plot_multi_target_scene(ax, scenario_data, tracks, target_track_ids)
 
-    radar_range = sensor_configs["radar"]["range_m"]
-    ax.add_patch(
-        plt.Circle(
-            (0.0, 0.0),
-            radar_range,
-            fill=False,
-            color=SENSOR_COLORS["radar"],
-            ls="--",
-            lw=1.0,
-            alpha=0.25,
-        )
-    )
-    ax.plot(0.0, 0.0, "^", color=SENSOR_COLORS["radar"], ms=9, label="Radar")
-
-    camera_range = sensor_configs["camera"]["range_m"]
-    camera_boresight = sensor_configs["camera"]["boresight_deg"]
-    ax.add_patch(
-        Arc(
-            (camera_pos[1], camera_pos[0]),
-            2 * camera_range,
-            2 * camera_range,
-            theta1=90 - camera_boresight - 90,
-            theta2=90 - camera_boresight + 90,
-            color=SENSOR_COLORS["camera"],
-            lw=1.0,
-            ls="--",
-            alpha=0.35,
-        )
-    )
-    ax.plot(camera_pos[1], camera_pos[0], "s",
-            color=SENSOR_COLORS["camera"], ms=8, label="Camera")
-
-    best_track_ids = set(target_track_ids.values())
-    for track in tracks:
-        if track.track_id not in best_track_ids:
-            continue
-        if len(track.history) < 2:
-            continue
-        history = np.array([record[1] for record in track.history])
-        target_id = None
-        for candidate_target, candidate_track in target_track_ids.items():
-            if candidate_track == track.track_id:
-                target_id = candidate_target
-                break
-        color = RUN_COLORS[int(target_id) % len(RUN_COLORS)]
-        ax.plot(history[:, 1], history[:, 0], "-", color=color, lw=2.2,
-                label=f"track {track.track_id} -> target {target_id}")
-
-    ax.set_xlabel("East [m]")
-    ax.set_ylabel("North [m]")
     ax.set_title(title)
-    ax.set_aspect("equal", adjustable="box")
-    ax.grid(True, alpha=0.25)
-    ax.legend(fontsize=7, loc="best", ncol=2)
+    
+    fig.savefig(output_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    return output_path
+
+
+def plot_t7_tracks(scenario_data, tracks, target_track_IDs, MOTP_time_series, CE_time_series, output_name, title):
+    TRACKING_OUTPUT_DIR.mkdir(exist_ok=True)
+    output_path = TRACKING_OUTPUT_DIR / output_name
+
+    sensor_configs = scenario_data["sensor_configs"]
+    camera_pos = np.array(sensor_configs["camera"]["pos_ned"], dtype=float)
+
+    fig, (ax_scene, ax_motp, ax_ce) = plt.subplots(1, 3, figsize=(18, 6))
+
+    # -------------------------
+    # 1. SCENE (same as T6)
+    # -------------------------
+    plot_multi_target_scene(ax_scene, scenario_data, tracks, target_track_IDs)
+
+    ax_scene.set_title("Tracking Scene")
+
+    # -------------------------
+    # 2. MOTP plot
+    # -------------------------
+    times_motp = [t for t, _ in MOTP_time_series]
+    motp_values = [v for _, v in MOTP_time_series]
+
+    ax_motp.plot(times_motp, motp_values, color="#D97706", lw=2)
+    ax_motp.set_title("MOTP (Localization Error)")
+    ax_motp.set_xlabel("Time [s]")
+    ax_motp.set_ylabel("Error [m]")
+    ax_motp.grid(True, alpha=0.25)
+
+    # -------------------------
+    # 3. CE plot
+    # -------------------------
+    times_ce = [t for t, _ in CE_time_series]
+    ce_values = [v for _, v in CE_time_series]
+
+    ax_ce.plot(times_ce, ce_values, color="#DC2626", lw=2)
+
+    ax_ce.set_title("Cardinality Error (CE)")
+    ax_ce.set_xlabel("Time [s]")
+    ax_ce.set_ylabel("|Tracks - Truth|")
+    ax_ce.grid(True, alpha=0.25)
+
+    # -------------------------
+    fig.suptitle(title, fontsize=13, fontweight="bold")
     fig.tight_layout()
     fig.savefig(output_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
+
     return output_path

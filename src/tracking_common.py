@@ -12,6 +12,7 @@ SCENARIO_A_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_A.jso
 SCENARIO_B_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_B.json"
 SCENARIO_C_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_C.json"
 SCENARIO_D_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_D.json"
+SCENARIO_E_PATH = BASE_DIR / "AMS_project_2026/harbour_sim_output/scenario_E.json"
 TRACKING_OUTPUT_DIR = BASE_DIR / "tracking_output"
 
 SENSOR_ORDER = ("radar", "camera")

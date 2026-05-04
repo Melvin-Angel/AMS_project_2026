@@ -13,6 +13,7 @@ from src.ekf_tracker import EKFTracker
 from src.tracking_common import (
     CHI2_99_THRESHOLDS,
     SCENARIO_D_PATH,
+    SCENARIO_E_PATH,
     SENSOR_ORDER,
     group_measurements_by_time,
     load_scenario,
@@ -22,6 +23,7 @@ from src.tracking_common import (
     truth_position_at,
 )
 from src.tracking_plots import plot_t6_tracks
+# from src.t7_track_management import compute_MOTP, compute_CE
 
 
 ASSIGNMENT_PENALTY = 1.0e6
@@ -36,35 +38,101 @@ class Track:
     total_assignments: int = 1
     assigned_target_ids: list = field(default_factory=list)
     history: list = field(default_factory=list)
+    confirmed: bool = False
+    confirmation_count: int = 0
+
+class DataAssociator:
+    def __init__(self, gate_probability=0.99):
+        self.gate_probability = gate_probability
+        self.gate_threshold = CHI2_99_THRESHOLDS[2]  # Default for 2D measurements
+
+    def mahalanobis_gate(self, track, measurement, coord_manager, R_by_sensor):
+        sensor_id = measurement["sensor_id"]
+        z = detection_vector(measurement)
+        h = coord_manager.compute_h(track.tracker.x, sensor_id)
+        H = coord_manager.compute_jacobian(track.tracker.x, sensor_id)
+        R = R_by_sensor[sensor_id]
+        innovation = z - h
+        innovation[1] = (innovation[1] + np.pi) % (2.0 * np.pi) - np.pi
+        S = H @ track.tracker.P @ H.T + R
+        distance_squared = float(innovation.T @ np.linalg.solve(S, innovation))
+        return distance_squared, h, H, R
+    
+    
+    def associate_gnn(self, tracks, detections, coord_manager, R_by_sensor, gate_probability=0.99):
+        """
+        Global Nearest Neighbor over track/sensor slots and all detections.
+
+        A row represents one possible sensor contribution to one track. This lets
+        the same track receive one radar and one camera update at the same scan,
+        while each detection can still be assigned at most once globally.
+        """
+        if not tracks or not detections:
+            return [], set(range(len(detections)))
+
+        available_sensors = sorted(
+            {detection["sensor_id"] for detection in detections},
+            key=SENSOR_ORDER.index,
+        )
+        rows = [
+            (track_index, sensor_id)
+            for track_index, _ in enumerate(tracks)
+            for sensor_id in available_sensors
+        ]
+
+        cost = np.full((len(rows), len(detections)), ASSIGNMENT_PENALTY)
+        gate_threshold = CHI2_99_THRESHOLDS[2]
+        gated_distances = {}
+
+        for row_index, (track_index, row_sensor) in enumerate(rows):
+            track = tracks[track_index]
+            for detection_index, detection in enumerate(detections):
+                if detection["sensor_id"] != row_sensor:
+                    continue
+                distance_squared, h, H, R = self.mahalanobis_gate(
+                    track,
+                    detection,
+                    coord_manager,
+                    R_by_sensor,
+                )
+                if distance_squared <= gate_threshold:
+                    cost[row_index, detection_index] = distance_squared
+                    gated_distances[(row_index, detection_index)] = (distance_squared, h, H, R)
+
+        row_indices, detection_indices = linear_sum_assignment(cost)
+
+        assignments = []
+        assigned_detections = set()
+        used_track_sensor_slots = set()
+        for row_index, detection_index in zip(row_indices, detection_indices):
+            if cost[row_index, detection_index] >= ASSIGNMENT_PENALTY:
+                continue
+
+            track_index, sensor_id = rows[row_index]
+            slot = (track_index, sensor_id)
+            if slot in used_track_sensor_slots:
+                continue
+
+            distance_squared, h, H, R = gated_distances[(row_index, detection_index)]
+            assignments.append({
+                "track_index": track_index,
+                "detection_index": detection_index,
+                "distance_squared": distance_squared,
+                "h": h,
+                "H": H,
+                "R": R,
+            })
+            assigned_detections.add(detection_index)
+            used_track_sensor_slots.add(slot)
+
+        unmatched_detections = set(range(len(detections))) - assigned_detections
+        return assignments, unmatched_detections
 
 
+# ****************************************************************************************************************
 def detection_vector(measurement):
-    return np.array([measurement["range_m"], measurement["bearing_rad"]])
-
-
-def initialise_track_from_detection(
-    track_id,
-    measurement,
-    coord_manager,
-    R_by_sensor,
-):
-    sensor_id = measurement["sensor_id"]
-    sensor_position = coord_manager.get_sensor_position(sensor_id)
-    z = detection_vector(measurement)
-    position = polar_to_cartesian(z[0], z[1], sensor_position)
-    position_covariance = polar_position_covariance(z[0], z[1], R_by_sensor[sensor_id])
-
-    x_initial = np.array([position[0], position[1], 0.0, 0.0])
-    P_initial = np.zeros((4, 4))
-    P_initial[:2, :2] = position_covariance
-    P_initial[2:, 2:] = np.eye(2) * 100.0
-
-    tracker = EKFTracker(x_initial=x_initial, P_initial=P_initial, sigma_a=0.05)
-    track = Track(track_id=track_id, tracker=tracker, last_time=measurement["time"])
-    track.assigned_target_ids.append(measurement["target_id"])
-    track.history.append((measurement["time"], tracker.x[:2].copy()))
-    return track
-
+        """Convert measurement to vector form"""
+        return np.array([measurement["range_m"], measurement["bearing_rad"]])
 
 def predict_tracks_to_time(tracks, time_s):
     for track in tracks:
@@ -72,89 +140,6 @@ def predict_tracks_to_time(tracks, time_s):
         if dt > 0:
             track.tracker.predict(dt)
             track.last_time = time_s
-
-
-def mahalanobis_gate(track, measurement, coord_manager, R_by_sensor):
-    sensor_id = measurement["sensor_id"]
-    z = detection_vector(measurement)
-    h = coord_manager.compute_h(track.tracker.x, sensor_id)
-    H = coord_manager.compute_jacobian(track.tracker.x, sensor_id)
-    R = R_by_sensor[sensor_id]
-    innovation = z - h
-    innovation[1] = (innovation[1] + np.pi) % (2.0 * np.pi) - np.pi
-    S = H @ track.tracker.P @ H.T + R
-    distance_squared = float(innovation.T @ np.linalg.solve(S, innovation))
-    return distance_squared, h, H, R
-
-
-def associate_gnn(tracks, detections, coord_manager, R_by_sensor, gate_probability=0.99):
-    """
-    Global Nearest Neighbor over track/sensor slots and all detections.
-
-    A row represents one possible sensor contribution to one track. This lets
-    the same track receive one radar and one camera update at the same scan,
-    while each detection can still be assigned at most once globally.
-    """
-    if not tracks or not detections:
-        return [], set(range(len(detections)))
-
-    available_sensors = sorted(
-        {detection["sensor_id"] for detection in detections},
-        key=SENSOR_ORDER.index,
-    )
-    rows = [
-        (track_index, sensor_id)
-        for track_index, _ in enumerate(tracks)
-        for sensor_id in available_sensors
-    ]
-
-    cost = np.full((len(rows), len(detections)), ASSIGNMENT_PENALTY)
-    gate_threshold = CHI2_99_THRESHOLDS[2]
-    gated_distances = {}
-
-    for row_index, (track_index, row_sensor) in enumerate(rows):
-        track = tracks[track_index]
-        for detection_index, detection in enumerate(detections):
-            if detection["sensor_id"] != row_sensor:
-                continue
-            distance_squared, h, H, R = mahalanobis_gate(
-                track,
-                detection,
-                coord_manager,
-                R_by_sensor,
-            )
-            if distance_squared <= gate_threshold:
-                cost[row_index, detection_index] = distance_squared
-                gated_distances[(row_index, detection_index)] = (distance_squared, h, H, R)
-
-    row_indices, detection_indices = linear_sum_assignment(cost)
-
-    assignments = []
-    assigned_detections = set()
-    used_track_sensor_slots = set()
-    for row_index, detection_index in zip(row_indices, detection_indices):
-        if cost[row_index, detection_index] >= ASSIGNMENT_PENALTY:
-            continue
-
-        track_index, sensor_id = rows[row_index]
-        slot = (track_index, sensor_id)
-        if slot in used_track_sensor_slots:
-            continue
-
-        distance_squared, h, H, R = gated_distances[(row_index, detection_index)]
-        assignments.append({
-            "track_index": track_index,
-            "detection_index": detection_index,
-            "distance_squared": distance_squared,
-            "h": h,
-            "H": H,
-            "R": R,
-        })
-        assigned_detections.add(detection_index)
-        used_track_sensor_slots.add(slot)
-
-    unmatched_detections = set(range(len(detections))) - assigned_detections
-    return assignments, unmatched_detections
 
 
 def apply_assignments(tracks, detections, assignments, time_s):
@@ -185,12 +170,16 @@ def apply_assignments(tracks, detections, assignments, time_s):
 
 
 def dominant_target_id(track):
+    """
+    Determine the dominant target ID for a track based on most frequent assignments.
+    """
     target_ids = [target_id for target_id in track.assigned_target_ids if target_id >= 0]
     if not target_ids:
         return None
     values, counts = np.unique(target_ids, return_counts=True)
     return int(values[np.argmax(counts)])
 
+# ****************************************************************************************************************
 
 def validate_tracks(tracks, scenario_data, min_assignments=6):
     mature_tracks = [track for track in tracks if track.total_assignments >= min_assignments]
@@ -218,6 +207,31 @@ def validate_tracks(tracks, scenario_data, min_assignments=6):
 
     return mature_tracks, target_errors, target_track_ids
 
+def initialise_track_from_detection(
+    track_id,
+    measurement,
+    coord_manager,
+    R_by_sensor,
+):
+    sensor_id = measurement["sensor_id"]
+    sensor_position = coord_manager.get_sensor_position(sensor_id)
+    z = detection_vector(measurement)
+    position = polar_to_cartesian(z[0], z[1], sensor_position)
+    position_covariance = polar_position_covariance(z[0], z[1], R_by_sensor[sensor_id])
+
+    x_initial = np.array([position[0], position[1], 0.0, 0.0])
+    P_initial = np.zeros((4, 4))
+    P_initial[:2, :2] = position_covariance
+    P_initial[2:, 2:] = np.eye(2) * 100.0
+
+    tracker = EKFTracker(x_initial=x_initial, P_initial=P_initial, sigma_a=0.05)
+    track = Track(track_id=track_id, tracker=tracker, last_time=measurement["time"])
+    track.assigned_target_ids.append(measurement["target_id"])
+    track.history.append((measurement["time"], tracker.x[:2].copy()))
+    return track
+
+
+# ****************************************************************************************************************
 
 def run_t6_association(scenario_path=SCENARIO_D_PATH, make_plot=True):
     print("Starting T6 gating and data association (Scenario D)...")
@@ -248,6 +262,9 @@ def run_t6_association(scenario_path=SCENARIO_D_PATH, make_plot=True):
     missed_track_count = 0
     sensor_skip_count = {sensor_id: 0 for sensor_id in SENSOR_ORDER}
 
+    # Initialize DataAssociator
+    associator = DataAssociator(gate_probability=0.99)
+
     for time_s in sorted(scans):
         scan_detections = scans[time_s]
         sensor_available = {
@@ -260,7 +277,7 @@ def run_t6_association(scenario_path=SCENARIO_D_PATH, make_plot=True):
 
         predict_tracks_to_time(tracks, time_s)
 
-        assignments, unmatched_detections = associate_gnn(
+        assignments, unmatched_detections = associator.associate_gnn(
             tracks,
             scan_detections,
             coord_manager,
@@ -336,6 +353,10 @@ def run_t6_association(scenario_path=SCENARIO_D_PATH, make_plot=True):
                 f"  target {target_id}: track {target_track_ids[target_id]} "
                 f"RMSE={target_errors[target_id]:.2f} m"
             )
+    
+    # print(f"MOTP avg            : {MOTP_avg:.2f}")
+    print(f"CE avg              : {CE_avg:.2f}")
+
     if plot_path is not None:
         print(f"Tracking plot                      : {plot_path}")
 
@@ -353,6 +374,10 @@ def run_t6_association(scenario_path=SCENARIO_D_PATH, make_plot=True):
         "plot_path": plot_path,
     }
 
+# ****************************************************************************************************************
 
 if __name__ == "__main__":
     run_t6_association()
+
+
+
