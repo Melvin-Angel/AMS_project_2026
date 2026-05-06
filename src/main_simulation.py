@@ -10,13 +10,15 @@ from src.t3_radar_tracker import run_t3_radar_tracker
 from src.t4_camera_fusion import run_t4_comparison
 from src.t5_ais_fusion import run_t5_comparison
 from src.t6_gating_association import run_t6_association
+from src.t7_track_management import run_t7_track_management
+from src.t8_real_data import run_t8_real_data
 
 
 def main():
     parser = argparse.ArgumentParser(description="Run harbour surveillance EKF tasks.")
     parser.add_argument(
         "task",
-        choices=("t2", "t3", "t4", "t5", "t6", "all"),
+        choices=("t2", "t3", "t4", "t5", "t6", "t7", "t8", "all"),
         nargs="?",
         default="all",
         help="Task runner to execute. Defaults to all.",
@@ -44,6 +46,12 @@ def main():
 
     if args.task in ("t6", "all"):
         run_t6_association(make_plot=make_plot)
+
+    if args.task in ("t7", "all"):
+        run_t7_track_management(make_plot=make_plot)
+
+    if args.task in ("t8", "all"):
+        run_t8_real_data(make_plot=make_plot)
 
 
 if __name__ == "__main__":
